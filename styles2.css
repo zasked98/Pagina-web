@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #aa8f66, #ed9b40, #ffeedb, #61c9a8, #ba3b46);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: -150px;
+    transition: transform 0.3s ease;
+}
+
+#hero:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+/* Estilos para las imágenes */
+.image-container img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el título "Certificaciones" */
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #aa8f66, #ed9b40, #ffeedb, #61c9a8, #ba3b46);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 15s ease infinite;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

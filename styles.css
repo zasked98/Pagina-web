@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #aa8f66, #ed9b40, #ffeedb, #61c9a8, #ba3b46);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: -150px;
+    transition: transform 0.3s ease;
+}
+
+#hero:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.informacion-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.informacion {
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(45deg, #aa8f66, #ed9b40, #ffeedb, #61c9a8, #ba3b46);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 15s ease infinite;
+    margin-left: -1em; /* Mover el título 1em a la izquierda */
+}
+
+span {
+    font-size: 14px;
+    color: #666;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #333;
+}
+
+ul.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Estilos específicos */
+#computadora img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+#foto img {
+    max-width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-left: -5em; /* Mover la imagen cinco espacios a la izquierda */
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #666;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+#stack-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#stack-images .image-container {
+    margin: 0 10px;
+}
+
+#stack-images img {
+    max-width: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#stack-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el título "MI STACK" */
+h4 {
+    text-align: center;
+    background: linear-gradient(45deg, #ba3b46, #61c9a8, #ffeedb, #ed9b40, #aa8f66);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 15s ease infinite reverse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para el menú */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #fff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ddd;
+}
